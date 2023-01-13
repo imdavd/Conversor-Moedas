@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor online</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="png" />
+</head>
+
+<body>
+    </head>
+
+    <body>
+        <img src="./imagens/my-dolar.gif" alt="Gif Animado">
+        <h1> Seu conversor TOP </h1>
+        <h4> Converta aqui todo o seu dinheiro! </h4>
+
+        <div>
+            <input id="real" type="number" placeholder="Valor em Reais">
+            <input id="dolar" type="number" placeholder="Valor do Dólar">
+        </div>
+        <p id="dolares">$</p>
+
+        <button onclick="calcularDolar()" style="cursor: pointer"> Converter </button>
+
+        <footer>
+
+            <p> Desenvolvido por: David dos Reis </p>
+
+        </footer>
+    </body>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #323232;
+            color: rgb(255, 255, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        img {
+            width: 60%;
+        }
+
+        h1 {
+            color: #cfff00;
+            font-size: 3.8vh;
+        }
+
+        h4{
+            font-size: 1.5vh;
+        }
+
+        input {
+            width: 20vh;
+            height: 3vh;
+            border-radius: 2vh;
+            padding: 1vh;
+        }
+
+        #real {
+            border: .1vh solid #01ff01;
+        }
+
+        #dolar {
+            border: .1vh solid #09f4fc;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 2vh;
+        }
+
+        button {
+            height: 4vh;
+            width: 15vh;
+            font-size: 1.7vh;
+            border-radius: 2vh;
+            border: 2px solid #09f4fc;
+            background-color: #323232;
+            color: white;
+            font-weight: 600;
+        }
+
+        button:hover {
+            color: #323232;
+            background-color: #09f4fc;
+            transition: 0.9s;
+        }
+
+        footer {
+            margin-top: 8%;
+            max-width:100%;
+            max-height:100%;
+            position: relative;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 2;
+            font-size: 1vh;
+        }
+        
+    </style>
+
+    <script>
+        function calcularDolar() {
+            
+        let real = document.getElementById('real').value;
+        let dolar = document.getElementById('dolar').value;
+        let resultado = (real / dolar);
+    
+        if (resultado = real / dolar) {
+            dolares.innerHTML = 'O resultado é: $' + resultado.toFixed(2) + ' Dólares!';
+        } else {
+            dolares.innerHTML = '*Por favor digite os valores';
+        }
+        }
+    </script>
+
+
+</html>
